@@ -24,6 +24,12 @@ namespace Fundamentos
 				Console.Write("{0} - ", n.Next(1, 46)); //Imprime valores entre 1 y 45 incluídos
 			} //Pueden aparecer repetidos
 		}
+
+		public static int factorial(int n)
+		{
+			if (n > 1) { return n * factorial(n - 1); }
+			else { return 1; }
+		}
 	}
 }
 

@@ -16,4 +16,7 @@ Console.WriteLine(" de Intercambiar por Referencia: x: {0} y: {1}", x, y);
 
 Console.WriteLine("Números aleatorios: ");
 Utilidades.printRandom();
+Console.WriteLine();
+
+Console.WriteLine("Factorial de {0}: es: {1} ", x, Utilidades.factorial(x));
 Console.ReadKey(); //Detenemos la consola hasta que el usuario pulsa una tecla
