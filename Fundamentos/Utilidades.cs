@@ -63,6 +63,30 @@ namespace Fundamentos
 				}
 			}
 		}
-	}
+
+		public static void inicializaVectorBidimensional(int[,] vectorBidi)
+		{
+			for(int i = 0; i < vectorBidi.GetLength(0); i++)
+			{
+				for(int j = 0; j < vectorBidi.GetLength(1); j++)
+				{
+					Console.Write("Introduce un número: ");
+					vectorBidi[i, j] = int.Parse(Console.ReadLine());
+				}
+			}
+		}
+
+        public static void verVectorBidimensional(int[,] vectorBidi)
+        {
+            for (int i = 0; i < vectorBidi.GetLength(0); i++)
+            {
+                for (int j = 0; j < vectorBidi.GetLength(1); j++)
+                {
+                    Console.Write("{0} \t", vectorBidi[i,j]);
+                }
+				Console.WriteLine();
+            }
+        }
+    }
 }
 

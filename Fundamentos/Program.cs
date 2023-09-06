@@ -30,4 +30,8 @@ Utilidades.ordenar(numLot);
 for (int i = 0; i < numLot.Length; i++)
     Console.Write(numLot[i] + " ");
 Console.WriteLine();
+
+int[,] vectorBidi = new int[3, 5];
+Utilidades.inicializaVectorBidimensional(vectorBidi);
+Utilidades.verVectorBidimensional(vectorBidi);
 Console.ReadKey(); //Detenemos la consola hasta que el usuario pulsa una tecla
