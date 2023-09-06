@@ -36,4 +36,14 @@ Utilidades.inicializaVectorBidimensional(vectorBidi);
 Utilidades.verVectorBidimensional(vectorBidi);
 Console.WriteLine();
 Utilidades.printVChars();
+
+
+string cadena = "hola mundo";
+Console.WriteLine(cadena[3]);
+//No permitido cadena[3]='A'
+
+char[] letras = new char[] { 'h', 'o', 'l', 'a' };
+string saludo = new string(letras);
+Console.WriteLine(saludo);
+
 Console.ReadKey(); //Detenemos la consola hasta que el usuario pulsa una tecla
