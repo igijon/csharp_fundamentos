@@ -11,7 +11,7 @@ Console.WriteLine("x: {0}", x);
 Console.WriteLine("Antes de Intercambiar por Valor: x: {0} y: {1}", x, y);
 Utilidades.intercambio(x, y);
 Console.WriteLine("Después de Intercambiar por Valor: x: {0} y: {1}", x, y);
-Utilidades.intercanmbioRef(ref x, ref y);
+Utilidades.intercambioRef(ref x, ref y);
 Console.WriteLine(" de Intercambiar por Referencia: x: {0} y: {1}", x, y);
 
 Console.WriteLine("Números aleatorios: ");
@@ -23,6 +23,11 @@ Console.WriteLine("Factorial de {0}: es: {1} ", x, Utilidades.factorial(x));
 Console.WriteLine("Ganadores lotería: ");
 int[] numLot = Utilidades.numLot();
 for (int i = 0; i < numLot.Length; i++)
-    Console.Write(numLot[i]+" ");
+    Console.Write(numLot[i] + " ");
+Console.WriteLine();
+
+Utilidades.ordenar(numLot);
+for (int i = 0; i < numLot.Length; i++)
+    Console.Write(numLot[i] + " ");
 Console.WriteLine();
 Console.ReadKey(); //Detenemos la consola hasta que el usuario pulsa una tecla

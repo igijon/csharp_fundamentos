@@ -9,7 +9,7 @@ namespace Fundamentos
 			c = a; a = b; b = c;
 		}
 
-		public static void intercanmbioRef(ref int a, ref int b)
+		public static void intercambioRef(ref int a, ref int b)
 		{
             int c;
             c = a; a = b; b = c;
@@ -48,6 +48,20 @@ namespace Fundamentos
 				nPremiados[i] = num;
 			}
 			return nPremiados;
+		}
+
+		public static void ordenar(int[] vector)
+		{
+			for(int i = 0; i < vector.Length; i++)
+			{
+				for(int j = 0; j < i; j++)
+				{
+					if (vector[j] > vector[i])
+					{
+						intercambioRef(ref vector[j], ref vector[i]);
+					}
+				}
+			}
 		}
 	}
 }
