@@ -87,6 +87,12 @@ namespace Fundamentos
 				Console.WriteLine();
             }
         }
+
+		public static void printVChars()
+		{
+			char[] letras = new char[] { 'h', 'o', 'l', 'a' };
+			Console.WriteLine(letras);
+		}
     }
 }
 

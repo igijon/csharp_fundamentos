@@ -34,4 +34,6 @@ Console.WriteLine();
 int[,] vectorBidi = new int[3, 5];
 Utilidades.inicializaVectorBidimensional(vectorBidi);
 Utilidades.verVectorBidimensional(vectorBidi);
+Console.WriteLine();
+Utilidades.printVChars();
 Console.ReadKey(); //Detenemos la consola hasta que el usuario pulsa una tecla
