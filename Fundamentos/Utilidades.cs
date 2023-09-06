@@ -35,12 +35,17 @@ namespace Fundamentos
 		//Construye un array con los "números ganadores" de la lotería
 		public static int[] numLot()
 		{
-			int i;
+			int num;
 			Random n = new Random();
 			int[] nPremiados = new int[6];
-			for(i = 0; i < nPremiados.Length; i++)
+			for(int i = 0; i < nPremiados.Length; i++)
 			{
-				nPremiados[i] = n.Next(1, 46);
+				do
+				{
+					num = n.Next(1, 46);
+
+				} while (Array.IndexOf(nPremiados, num) >= 0);
+				nPremiados[i] = num;
 			}
 			return nPremiados;
 		}
