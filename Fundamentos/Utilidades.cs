@@ -15,6 +15,7 @@ namespace Fundamentos
             c = a; a = b; b = c;
         }
 
+
 		public static void printRandom()
 		{
 			Random n = new Random();
@@ -29,6 +30,19 @@ namespace Fundamentos
 		{
 			if (n > 1) { return n * factorial(n - 1); }
 			else { return 1; }
+		}
+
+		//Construye un array con los "números ganadores" de la lotería
+		public static int[] numLot()
+		{
+			int i;
+			Random n = new Random();
+			int[] nPremiados = new int[6];
+			for(i = 0; i < nPremiados.Length; i++)
+			{
+				nPremiados[i] = n.Next(1, 46);
+			}
+			return nPremiados;
 		}
 	}
 }

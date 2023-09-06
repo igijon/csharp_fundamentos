@@ -19,4 +19,10 @@ Utilidades.printRandom();
 Console.WriteLine();
 
 Console.WriteLine("Factorial de {0}: es: {1} ", x, Utilidades.factorial(x));
+
+Console.WriteLine("Ganadores lotería: ");
+int[] numLot = Utilidades.numLot();
+for (int i = 0; i < numLot.Length; i++)
+    Console.Write(numLot[i]+" ");
+Console.WriteLine();
 Console.ReadKey(); //Detenemos la consola hasta que el usuario pulsa una tecla
