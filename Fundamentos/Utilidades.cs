@@ -3,12 +3,15 @@ namespace Fundamentos
 {
 	public class Utilidades
 	{
+		public enum Tallas {XS, S, M=5, L, XL};
+
 		public struct contacto
 		{
 			public string nombre;
 			public string apellidos;
 			public string movil;
 			public string email;
+			public int talla;
 		};
 
 		public static void intercambio(int a, int b)
@@ -110,8 +113,9 @@ namespace Fundamentos
 			amigo.apellidos = "González Sánchez";
 			amigo.email = "luisg@gmail.com";
 			amigo.movil = "123456789";
+			amigo.talla = (int)Tallas.L;
 			agenda[0] = amigo;
-			Console.WriteLine(amigo.nombre + " " + amigo.apellidos);
+			Console.WriteLine(amigo.nombre + " " + amigo.apellidos+ " Talla: "+amigo.talla);
 
 		}
     }
