@@ -14,4 +14,6 @@ Console.WriteLine("Después de Intercambiar por Valor: x: {0} y: {1}", x, y);
 Utilidades.intercanmbioRef(ref x, ref y);
 Console.WriteLine(" de Intercambiar por Referencia: x: {0} y: {1}", x, y);
 
+Console.WriteLine("Números aleatorios: ");
+Utilidades.printRandom();
 Console.ReadKey(); //Detenemos la consola hasta que el usuario pulsa una tecla

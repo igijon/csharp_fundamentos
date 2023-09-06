@@ -14,6 +14,16 @@ namespace Fundamentos
             int c;
             c = a; a = b; b = c;
         }
+
+		public static void printRandom()
+		{
+			Random n = new Random();
+			Console.WriteLine("Números de la lotería primitiva");
+			for(int i = 0; i < 6; i++)
+			{
+				Console.Write("{0} - ", n.Next(1, 46)); //Imprime valores entre 1 y 45 incluídos
+			} //Pueden aparecer repetidos
+		}
 	}
 }
 
