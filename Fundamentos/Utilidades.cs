@@ -3,6 +3,14 @@ namespace Fundamentos
 {
 	public class Utilidades
 	{
+		public struct contacto
+		{
+			public string nombre;
+			public string apellidos;
+			public string movil;
+			public string email;
+		};
+
 		public static void intercambio(int a, int b)
 		{
 			int c;
@@ -92,6 +100,19 @@ namespace Fundamentos
 		{
 			char[] letras = new char[] { 'h', 'o', 'l', 'a' };
 			Console.WriteLine(letras);
+		}
+
+		public static void manageContacto()
+		{
+			contacto[] agenda = new contacto[100];
+			contacto amigo = new contacto();
+			amigo.nombre = "Luis";
+			amigo.apellidos = "González Sánchez";
+			amigo.email = "luisg@gmail.com";
+			amigo.movil = "123456789";
+			agenda[0] = amigo;
+			Console.WriteLine(amigo.nombre + " " + amigo.apellidos);
+
 		}
     }
 }
